@@ -11,6 +11,6 @@ public class URI1005 {
         double media = (a * 3.5 + b * 7.5) / 11;
 
         System.out.printf(Locale.US, "MEDIA = %.5f\n", media);
-        sc.close();//
+        sc.close();
     }
 }
