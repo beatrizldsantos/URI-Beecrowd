@@ -6,7 +6,7 @@ public class URI1243 {
         Scanner leitor = new Scanner(System.in);
         while (leitor.hasNext()) {
             String linha = readLine(leitor);
-            String[] palavras = linha.split(" ");
+            String[] palavras = linha.split("");
             int countPalavras   = 0;
             int tamanhoPalavras = 0;
             for (String palavra : palavras) {
