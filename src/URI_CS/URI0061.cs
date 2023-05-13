@@ -6,7 +6,6 @@ class URI {
         while (true) {
             string line = Console.ReadLine();
             if (line == null) break; // Fim da entrada (EOF)
-
             string[] values = line.Split();
             int m = int.Parse(values[0]);
             int n = int.Parse(values[1]);
