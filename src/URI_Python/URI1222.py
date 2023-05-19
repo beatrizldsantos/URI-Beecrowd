@@ -12,7 +12,6 @@ while True:
     for palavra in palavras:
         tamanho_palavra = len(palavra)
 
-
         if num_caracteres == 0:
             # primeira palavra da linha
             num_caracteres = tamanho_palavra
