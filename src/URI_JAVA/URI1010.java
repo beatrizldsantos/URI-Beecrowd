@@ -5,6 +5,7 @@ public class URI1010 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+
         // Leitura dos dados da peça 1
         int codigoPeca1 = scanner.nextInt();
         int numeroPecas1 = scanner.nextInt();
