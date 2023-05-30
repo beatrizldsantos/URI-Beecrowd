@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class URI1115 {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
-        
+
         float x = ler.nextFloat();
         float y = ler.nextFloat();
 
