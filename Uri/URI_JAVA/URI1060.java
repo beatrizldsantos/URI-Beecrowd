@@ -11,7 +11,6 @@ public class URI1060 {
                 c++;
             }
         }
-
         System.out.printf("%d valores positivos\n", c);
     }
 }
