@@ -4,7 +4,6 @@ while True:
         palavras = input().split() # lista de palavras
     except EOFError:
         break
-
     num_paginas = 1
     num_linhas = 1
     num_caracteres = 0
