@@ -27,4 +27,5 @@ while True:
                 # a nova linha não cabe na página, começa uma nova página
                 num_paginas += 1
                 num_linhas = 1
+                
     print(num_paginas)
