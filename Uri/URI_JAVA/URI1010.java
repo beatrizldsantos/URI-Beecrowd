@@ -15,6 +15,7 @@ public class URI1010 {
         int numeroPecas2 = scanner.nextInt();
         double valorUnitarioPeca2 = scanner.nextDouble();
 
+
         // Cálculo do valor total a ser pago
         double valorTotal = (numeroPecas1 * valorUnitarioPeca1) + (numeroPecas2 * valorUnitarioPeca2);
 
