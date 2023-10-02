@@ -33,7 +33,6 @@ public class URI1243 {
             }
         }
     }
-
     public static String readLine(Scanner leitor) {
         String line = leitor.nextLine();
         while (line.isEmpty())
