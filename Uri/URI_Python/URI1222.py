@@ -7,7 +7,6 @@ while True:
     num_paginas = 1
     num_linhas = 1
     num_caracteres = 0
-
     for palavra in palavras:
         tamanho_palavra = len(palavra)
 
