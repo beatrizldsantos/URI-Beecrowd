@@ -11,5 +11,4 @@ public class URI2756 {
         System.out.println("      B B");
         System.out.println("       A");
     }
-
 }
