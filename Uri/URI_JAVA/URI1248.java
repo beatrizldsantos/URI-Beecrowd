@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.util.HashMap;
+import java.util.Arrays;
 
 public class URI1248 {
 
@@ -13,39 +13,28 @@ public class URI1248 {
         int N = readInt();
         while (N-- > 0) {
             String diet = read();
-            String foods = read() + read();
-            if (canMaintainDiet(diet, foods)) {
-                String sortedDiet = sortString(diet);
-                out.println(sortedDiet);
+            char[] foods = (read() + read()).toCharArray();
+            boolean f = true;
+            for (char food : foods) {
+                int lengthAux = diet.length();
+                diet = diet.replaceFirst(String.valueOf(food), "");
+                if (lengthAux == diet.length()) {
+                    f = false;
+                    break;
+                }
+            }
+            if (f) {
+                String[] S = diet.split("");
+                Arrays.sort(S);
+                for (String si : S) {
+                    out.print(si);
+                }
+                out.println();
             } else {
                 out.println("CHEATER");
             }
         }
         out.close();
-    }
-
-    private static boolean canMaintainDiet(String diet, String foods) {
-        HashMap<Character, Integer> dietMap = new HashMap<>();
-
-        for (char food : diet.toCharArray()) {
-            dietMap.put(food, dietMap.getOrDefault(food, 0) + 1);
-        }
-        for (char food : foods.toCharArray()) {
-            if (dietMap.containsKey(food)) {
-                dietMap.put(food, dietMap.get(food) - 1);
-                if (dietMap.get(food) == 0) {
-                    dietMap.remove(food);
-                }
-            }
-        }
-
-        return dietMap.isEmpty();
-    }
-
-    private static String sortString(String str) {
-        char[] charArray = str.toCharArray();
-        Arrays.sort(charArray);
-        return new String(charArray);
     }
 
     private static String read() throws IOException {
