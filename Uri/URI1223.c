@@ -22,7 +22,6 @@ long double dist(struct Point p1, struct Point p2) {
 long double distPt(struct Line l, struct Point p) {
     return fabs(l.a * p.x + l.b * p.y + l.c) / sqrt(l.a * l.a + l.b * l.b);
 }
-
 int main() {
     int n, l, h, yi, xf, yf;
     long double ans;
