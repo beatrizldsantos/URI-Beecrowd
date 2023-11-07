@@ -11,6 +11,7 @@ int main()
 	int eh_f = 0; 
 	while(scanf("%c" , &letra) != EOF)
 	{
+
 		eh_f = 0;
 		for(i = 0; i < 8 ; i++)
 		{
