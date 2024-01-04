@@ -10,7 +10,6 @@ public class URI1068 {
 			String parenteses="";
 			parenteses = sc.nextLine();
 			parenteses = parenteses.replaceAll("[^(e)]","");
-				
 			while(troca==1){
 				if(parenteses.indexOf("()") != -1) //Se for diferente de -1 é pq existe o caracter.
 					parenteses = parenteses.replaceFirst("\\(\\)","");
