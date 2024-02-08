@@ -47,6 +47,7 @@ JOIN
 ON sal.matr = emp.matr
 JOIN
 (
+    
     select cod_dep, nome from departamento
 ) AS dep
 ON dep.cod_dep IN ( emp.lotacao, emp.gerencia_cod_dep )
