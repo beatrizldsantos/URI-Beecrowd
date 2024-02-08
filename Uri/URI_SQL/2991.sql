@@ -24,7 +24,7 @@ FROM
         GROUP BY e.matr
     ) AS sal_sum
     LEFT JOIN
-    ( -- Soma de Descontos salariais por pessoa.
+    (
         SELECT e.matr, SUM(d.valor) as desconto FROM
             empregado AS e
         JOIN
