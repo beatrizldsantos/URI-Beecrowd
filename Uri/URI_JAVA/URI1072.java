@@ -21,7 +21,6 @@ public class URI1072 {
                 out = out + 1;
             }
         }
-
         System.out.println(in + " in");
         System.out.println(out + " out");
 
