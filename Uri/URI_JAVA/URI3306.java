@@ -1,3 +1,4 @@
+package URI_JAVA;
 import java.util.Scanner;
 import java.util.Arrays;
 
