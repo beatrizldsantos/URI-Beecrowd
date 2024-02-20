@@ -1,6 +1,7 @@
+package URI_JAVA;
 import java.util.Scanner;
 
-public class URU2339 {
+public class URI2339 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
