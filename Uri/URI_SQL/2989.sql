@@ -1,22 +1,35 @@
-with b (matr, nome, valor, dep, div) as 
-(
-select e.matr, e.nome, v.valor as valor, e.lotacao, e.lotacao_div from empregado e
-join emp_venc on e.matr = emp_venc.matr
-join vencimento v on emp_venc.cod_venc = v.cod_venc
-UNION ALL
-select e.matr, e.nome, (d.valor * -1.0) as valor, e.lotacao, e.lotacao_div from empregado e
-join emp_desc on e.matr = emp_desc.matr
-join desconto d on emp_desc.cod_desc = d.cod_desc
-),
-a (dep, div, nome, salario) as
-(
-select dep.nome, div.nome, b.nome, sum(b.valor) as salario from b
-join departamento dep on dep.cod_dep = b.dep
-join divisao div on div.cod_divisao = b.div
-group by dep.nome, div.nome, b.nome
-order by dep.nome asc, div.nome asc
-)
-select dep as departamento, div as divisao, round(avg(salario),2) as media, round(max(salario),2) as maior 
-from a
-group by departamento, divisao
-order by media desc;
+SELECT
+	d.nome AS Departamento,
+	div.nome AS Divisao,
+	ROUND(AVG(tsalario.salario - tdescontos.descontos), 2) AS media,
+	ROUND(MAX(tsalario.salario - tdescontos.descontos), 2) AS maior
+FROM
+	departamento d
+		INNER JOIN divisao div ON d.cod_dep = div.cod_dep
+		INNER JOIN empregado emp ON div.cod_divisao = emp.lotacao_div
+		INNER JOIN (SELECT
+						emp.matr,
+						COALESCE(SUM(v.valor), 0) AS salario
+					FROM
+						empregado emp
+							LEFT JOIN emp_venc ON emp.matr = emp_venc.matr
+							LEFT JOIN vencimento v ON emp_venc.cod_venc = v.cod_venc
+					GROUP BY
+						emp.matr
+					) AS tsalario ON emp.matr = tsalario.matr
+		INNER JOIN (SELECT
+						emp.matr,
+						COALESCE(SUM(desconto.valor), 0) AS descontos
+					FROM
+						empregado emp
+							LEFT JOIN emp_desc ON emp.matr = emp_desc.matr
+							LEFT JOIN desconto ON emp_desc.cod_desc = desconto.cod_desc
+					GROUP BY
+						emp.matr
+					) AS tdescontos ON emp.matr = tdescontos.matr
+GROUP BY
+	div.cod_divisao,
+	div.nome,
+	d.nome
+ORDER BY
+	AVG(tsalario.salario - tdescontos.descontos) DESC
