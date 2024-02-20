@@ -13,7 +13,6 @@ public class URI1235 {
             System.out.println(parte1.toString() + parte2.toString());
         }
     }
-
     public static String readLine(Scanner leitor) {
         String line = leitor.nextLine();
         while (line.isEmpty())
