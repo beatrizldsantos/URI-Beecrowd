@@ -1,7 +1,8 @@
+package URI_JAVA;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class URI1082 {
+public class URI1083 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
