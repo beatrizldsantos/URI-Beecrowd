@@ -28,7 +28,6 @@ public class URI1138 {
             p *= 10;
             ++pv;
         }
-
         if (d == 0)
             ans -= (p - 1) / 9;
 
