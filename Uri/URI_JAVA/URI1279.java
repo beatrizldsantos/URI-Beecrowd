@@ -1,19 +1,19 @@
+package URI_JAVA;
 import java.io.IOException;
 import java.util.*;
-import java.lang.*;
 import java.math.BigInteger;
 
 public class URI1279 {
  
     public static void main(String[] args) throws IOException {
- Scanner scan = new Scanner(System.in);
+ Scanner sc = new Scanner(System.in);
         boolean l=true;
-    while(scan.hasNext())
+    while(sc.hasNext())
     {
         if(!l)
             System.out.println();
         String str;
-        str = scan.next();
+        str = sc.next();
         BigInteger year =new BigInteger(str);
         BigInteger x = new BigInteger("100");
         BigInteger y =BigInteger.ZERO;
