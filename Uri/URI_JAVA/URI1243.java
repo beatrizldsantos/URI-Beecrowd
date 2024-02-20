@@ -9,6 +9,7 @@ public class URI1243 {
             String[] palavras = linha.split("");
             int countPalavras   = 0;
             int tamanhoPalavras = 0;
+
             for (String palavra : palavras) {
                 boolean palavraValida = true;
                 for (int i = 0; i < palavra.length(); i++) {
