@@ -1,3 +1,5 @@
+package URI_JAVA;
+
 import java.io.IOException;
 import java.util.Scanner;
 
