@@ -1,3 +1,5 @@
+package URI_JAVA;
+
 import java.util.Scanner;
 
 public class URI1400 {
