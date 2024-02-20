@@ -4,6 +4,7 @@ import java.util.Locale;
 public class URI1036 {
     public static void main(String[] args){
         Locale.setDefault(Locale.US);
+
         Scanner ler = new Scanner(System.in);
         double a, b, c, x1, x2, delta, raizDelta;
 
