@@ -20,6 +20,7 @@ public class URI1115 {
             else if (x > 0 && y < 0){
                 System.out.println("Quarto");
             }
+
             x = ler.nextInt();
             y = ler.nextInt();
         }
