@@ -1,3 +1,4 @@
+package URI_JAVA;
 import java.util.Scanner;
 public class URI1199{
     public static void main(String[] args) {
