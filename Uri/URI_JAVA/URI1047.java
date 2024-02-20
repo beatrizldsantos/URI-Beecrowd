@@ -1,5 +1,6 @@
+package URI_JAVA;
 import java.util.Scanner;
-public class Main {
+public class URI1047 {
     public static void main(String[] args){
         Scanner entrada = new Scanner(System.in);
         int h1 = entrada.nextInt();
