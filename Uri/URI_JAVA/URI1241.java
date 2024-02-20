@@ -16,5 +16,6 @@ public class URI1241 {
             else
                 System.out.println("nao encaixa");
         }
+
     }
 }
