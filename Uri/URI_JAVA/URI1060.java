@@ -1,12 +1,12 @@
-package URI;
+package URI_JAVA;
 import java.util.Scanner;
 public class URI1060 {
     public static void main(String[] args) {
-        Scanner ler = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int c = 0;
 
         for (int i = 0; i < 6; i++) {
-            double n = ler.nextDouble();
+            double n = sc.nextDouble();
             if (n > 0) {
                 c++;
             }
