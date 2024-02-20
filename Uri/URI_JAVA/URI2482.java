@@ -1,3 +1,4 @@
+package URI_JAVA;
 import java.util.HashMap;
 import java.util.Scanner;
 
