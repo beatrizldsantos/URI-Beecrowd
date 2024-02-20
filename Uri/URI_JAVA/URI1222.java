@@ -19,7 +19,6 @@ public class URI1222 {
 
         sc.close();
     }
-
     private static int calcularNumPaginas(int n, int l, int c, String[] palavras) {
         int numPaginas = 1;
         int numLinhas = 1;
