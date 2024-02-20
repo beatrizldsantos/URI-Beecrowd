@@ -10,6 +10,7 @@ import java.util.Scanner;
                 if (d == 0 && n == 0) {
                     break;
                 }
+
                 String numStr = Long.toString(n);
                 StringBuilder resultStr = new StringBuilder();
                 for (int i = 0; i < numStr.length(); i++) {
@@ -17,6 +18,7 @@ import java.util.Scanner;
                         resultStr.append(numStr.charAt(i));
                     }
                 }
+
                 if (resultStr.length() == 0) {
                     System.out.println(0);
                 } else {
