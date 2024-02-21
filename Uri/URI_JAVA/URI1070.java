@@ -17,7 +17,6 @@ public class URI1070 {
             }
             numeroImpar++;
         }
-
         scanner.close();
     }
 }
