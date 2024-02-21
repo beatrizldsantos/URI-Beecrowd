@@ -15,7 +15,6 @@ public class URI3069 {
             if (beachLength == 0 && numberOfIceCreamVendors == 0) {
                 break;
             }
-
             List<Interval> intervals = new ArrayList<>();
 
             for (int i = 0; i < numberOfIceCreamVendors; i++) {
