@@ -8,7 +8,6 @@ public class URI1197{
         while (sc.hasNext()) {
             int v = sc.nextInt();
             int t = sc.nextInt();
-
             System.out.println(2 * v * t);
         }
     }
