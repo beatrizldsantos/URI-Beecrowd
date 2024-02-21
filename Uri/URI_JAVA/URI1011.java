@@ -11,7 +11,6 @@ public class URI1011 {
             if (n == 0) {
                 break;
             }
-
             String board = sc.next();
 
             // Verifica se Maria pode sempre ganhar
