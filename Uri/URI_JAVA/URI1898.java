@@ -18,7 +18,6 @@ public class URI1898 {
             cpf = valor1.substring(0, 11);
             valor1 = valor1.substring(11, valor1.length());
         }
-
         if (valor1.contains(".")) {
             int index = valor1.indexOf(".");
             String numerosDepoisDoPonto = valor1.substring(index, valor1.length());
