@@ -11,7 +11,6 @@ public class URI3065 {
             if (m == 0) {
                 break;
             }
-
             String expressao = scanner.next();
 
             int resultado = calcularExpressao(expressao);
