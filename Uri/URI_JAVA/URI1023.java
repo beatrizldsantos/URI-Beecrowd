@@ -46,6 +46,7 @@ public class URI1023 {
                 roundConsumption = (int) Math.floor(Y / X);
                 if (relation.containsKey(roundConsumption)) {
                     X += relation.get(roundConsumption);
+
                 }
                 relation.put(roundConsumption, X);
             }
