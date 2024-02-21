@@ -11,7 +11,6 @@ public class URI1263 {
         }
         scanner.close();
     }
-
     private static int countAlliterations(String line) {
         String[] words = line.split(" ");
         int alliterationCount = 0;
