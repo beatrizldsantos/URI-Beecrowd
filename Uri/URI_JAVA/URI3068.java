@@ -1,5 +1,6 @@
 package URI_JAVA;
 import java.util.Scanner;
+// Com erro
 
 public class URI3068 {
     public static void main(String[] args) {
@@ -27,7 +28,6 @@ public class URI3068 {
                     count++;
                 }
             }
-
             System.out.println("Teste " + teste);
             System.out.println(count);
             System.out.println();
