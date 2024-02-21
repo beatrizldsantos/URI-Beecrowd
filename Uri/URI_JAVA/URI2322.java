@@ -11,7 +11,6 @@ public class URI2322 {
             numeros[i] = scanner.nextInt();
         }
         int numeroFaltando = calcularNumeroFaltando(n, numeros);
-
         System.out.println(numeroFaltando);
     }
 
