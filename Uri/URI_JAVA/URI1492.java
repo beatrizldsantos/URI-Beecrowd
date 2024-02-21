@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class URI1492 {
 
 public static long[][][] dp = new long[60][60][2];
-
 public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         while (leitor.hasNext()) {
