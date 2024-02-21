@@ -11,6 +11,7 @@ public class URI2890 {
             long n = leitor.nextLong();
             if (n == 0) break;
             long result = ((11 * pow2(n) + pow4(n)) % MOD) * inverso(12) % MOD;
+
             System.out.println(result);
         }
     }
