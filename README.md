@@ -1,1 +1,1 @@
-Repositório de resolução de questões do beecrowd.
+# Repositório de resolução de questões do beecrowd.
